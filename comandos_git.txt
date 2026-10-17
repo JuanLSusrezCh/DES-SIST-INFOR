@@ -1,0 +1,41 @@
+    1  git config --global user.name "JuanLSuarezCh"
+    2  git config --global user.email "jsuarez5494@utm.edu.ec"
+    3  git config --global --list
+    4  git init
+    5  git add .
+    6  git commit -m "primera actividad"
+    7  git status
+    8  gid add .
+    9  git commit -m "j1"
+   10  git add .
+   11  git status
+   12  git add -f Act1_suarez/Tutorial_Git.pdf
+   13  git status
+   14  git commit -m "primera actividad"
+   15  echo "Actualizacion tutorial Git - Juan Suarez"
+   16  git status
+   17  git add Act1_suarez/Tutorial_Git.pdf
+   18  git commit -m "commit update: subida del archivo"
+   19  git log --oneline
+   20  echo "Tutorial Git - Actualizacion adicional - Juan Suarez" > Act1_suarez/tutorial_adicional.txt
+   21  git add Act1_suarez/tutorial_adicional.txt
+   22  git commit -m "commit update: subida del archivo adicional tutorial"
+   23  git log --oneline
+   24  git remote add origin https://github.com/JuanLSusrezCh/DES-SIST-INFOR.git
+   25  git branch -M main
+   26  git push -u origin main
+   27  git add .
+   28  git commit -m "actualizacion: se agrego la portada al documento"
+   29  git push
+   30  git add .
+   31  git commit -m "enterga: informe pdf act1" 
+   32  git rm "Act1_suarez/~$evo Documento de Microsoft Word.docx"
+   33  git rm "Act1_suarez/~WRL2301.tmp"
+   34  git rm -f "Act1_suarez/~WRL2301.tmp"
+   35  git rm -f 'Act1_suarez/~$evo Documento de Microsoft Word.docx'
+   36  git commit -m "fix: elimina archivos temporales de Word"
+   37  git push
+   38  git rm "Act1_suarez/Tutorial_Git.pdf"
+   39  git commit -m "elimina duplicado Tutorial_Git, se queda Suarez_Juan_Act1"
+   40  git push
+   41   history > comandos_git.txt

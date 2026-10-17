@@ -1,0 +1,6 @@
+84b25fb elimina duplicado Tutorial_Git, se queda Suarez_Juan_Act1
+d3b445f fix: elimina archivos temporales de Word
+d9b2e88 enterga: informe pdf act1
+751583e actualizacion: se agrego la portada al documento
+203d3cc commit update: subida del archivo adicional tutorial
+568f8b9 primera actividad
