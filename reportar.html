@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reportar Rescate</title>
+</head>
+<body>
+<header>
+<h1>Reportar Nuevo Rescate</h1>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="reportar.html">Reportar Rescate</a></li>
+<li><a href="rescates.html">Rescates Registrados</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<h2>Formulario de Ingreso de Animal Rescatado</h2>
+<form action="rescates.html" method="get">
+<fieldset>
+<legend>Datos del Caso</legend>
+<label for="titulo">Título del caso o nombre provisional:</label>
+<input type="text" id="titulo" name="titulo" required minlength="3" placeholder="Ej: Perrito encontrado en el parque">
+<label for="categoria">Categoría:</label>
+<select id="categoria" name="categoria" required>
+<option value="">Seleccione una categoría...</option>
+<option value="perros">Perros</option>
+<option value="gatos">Gatos</option>
+<option value="fauna-silvestre">Fauna Silvestre</option>
+</select>
+<p>Nivel de urgencia médica:</p>
+<input type="radio" id="alta" name="urgencia" value="alta" required>
+<label for="alta">Alta</label>
+<input type="radio" id="media" name="urgencia" value="media">
+<label for="media">Media</label>
+<input type="radio" id="baja" name="urgencia" value="baja">
+<label for="baja">Baja</label>
+<label for="fecha">Fecha de rescate:</label>
+<input type="date" id="fecha" name="fecha" required>
+<label for="lugar">Lugar del rescate:</label>
+<input type="text" id="lugar" name="lugar" required placeholder="Barrio, calle, referencia">
+<label for="descripcion">Descripción detallada del estado en que se encontró:</label>
+<textarea id="descripcion" name="descripcion" rows="5" required placeholder="Describe cómo y en qué estado encontraste al animal..."></textarea>
+</fieldset>
+<fieldset>
+<legend>Datos del Reportante</legend>
+<label for="reportante">Nombre completo:</label>
+<input type="text" id="reportante" name="reportante" required>
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required placeholder="0987654321">
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+</fieldset>
+<button type="submit">Registrar Rescate</button>
+<button type="reset">Limpiar Formulario</button>
+</form>
+</section>
+</main>
+<footer>
+<p><a href="index.html">Volver a Inicio</a> | <a href="rescates.html">Ver Rescates</a></p>
+<p>&copy; 2026 Sistema de Rescate y Adopción</p>
+</footer>
+</body>
+</html>
